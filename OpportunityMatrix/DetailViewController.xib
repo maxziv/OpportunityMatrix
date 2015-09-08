@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="OpportunityMatrix" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="G7U-OJ-7Q2"/>
+                <outlet property="webView" destination="ErF-zm-hHg" id="o97-Qn-tol"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ErF-zm-hHg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </webView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Max" translatesAutoresizingMaskIntoConstraints="NO" id="DAG-ac-cPw">
+                    <rect key="frame" x="275" y="567" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Wyx-yk-vag"/>
+                        <constraint firstAttribute="height" constant="100" id="oTl-Tg-V3v"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3T-yY-pHc">
+                    <rect key="frame" x="10" y="568" width="259" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <string key="text">Thanks for using this app! I personally uses Opportunity Matrix everyday, so made this app in a couple of hours to help boost my productivity. reach out to me: maxwellzhou@me.com</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DAG-ac-cPw" secondAttribute="bottom" id="6AM-z0-s8A"/>
+                <constraint firstAttribute="bottom" secondItem="C3T-yY-pHc" secondAttribute="bottom" constant="-1" id="8WA-Ce-8Dp"/>
+                <constraint firstItem="C3T-yY-pHc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="FND-XF-Hgu"/>
+                <constraint firstItem="ErF-zm-hHg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KfY-ll-o58"/>
+                <constraint firstAttribute="trailing" secondItem="DAG-ac-cPw" secondAttribute="trailing" id="Kmk-Wh-e0D"/>
+                <constraint firstItem="C3T-yY-pHc" firstAttribute="top" secondItem="ErF-zm-hHg" secondAttribute="bottom" constant="1" id="P4F-tj-vyf"/>
+                <constraint firstItem="ErF-zm-hHg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WVd-xH-Agq"/>
+                <constraint firstAttribute="trailing" secondItem="ErF-zm-hHg" secondAttribute="trailing" id="Z1t-sC-Egv"/>
+                <constraint firstItem="DAG-ac-cPw" firstAttribute="leading" secondItem="C3T-yY-pHc" secondAttribute="trailing" constant="6" id="apc-1j-A4n"/>
+                <constraint firstItem="DAG-ac-cPw" firstAttribute="top" secondItem="ErF-zm-hHg" secondAttribute="bottom" id="feL-6P-2dU"/>
+                <constraint firstAttribute="bottom" secondItem="ErF-zm-hHg" secondAttribute="bottom" constant="100" id="jdD-9e-LIt"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="286.5" y="434.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Max" width="220" height="221"/>
+    </resources>
+</document>
