@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
 
         navigationItem.title = "Opportunity Matrix"
 
-        let requestURL = NSURL(string:"https://www.linkedin.com/in/maxwellzhou")
+        let requestURL = NSURL(string:"https://www.isixsigma.com/tools-templates/brainstorming/effective-brainstorming-building-opportunity-matrix/")
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
     }

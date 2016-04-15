@@ -45,7 +45,7 @@ class TaskCell : UICollectionViewCell {
         let myContentRect = CGRectInset(self.contentView.bounds, 3, 3)
 
         myBorderView = UIView(frame: myContentRect)
-        myBorderView?.layer.borderColor = Color.Red6.CGColor
+        myBorderView?.layer.borderColor = Color.Red2.CGColor
         myBorderView?.layer.borderWidth = 3
         self.contentView.addSubview(myBorderView!)
     }
