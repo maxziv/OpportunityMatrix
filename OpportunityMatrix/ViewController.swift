@@ -160,6 +160,9 @@ extension ViewController: UIAlertViewDelegate {
                 let inputText = alertView.textFieldAtIndex(0)?.text{
                     tasks[currentAlertCellIndex.item] = inputText
                     cell.inflate(inputText, backgroundColor: nil)
+
+                    def.setObject(tasks, forKey: key)
+                    def.synchronize();
             }
         }
     }
